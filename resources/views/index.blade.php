@@ -150,7 +150,8 @@
         Se souvenir de moi.
       </label>
     </div>
-    <button class="btn btn-primary w-100 py-2 mb-3" type="submit">Se connecter</button>
+    
+    <a href="{{ route('admin') }}" class="btn btn-primary w-100 py-2 mb-3" type="submit" >Se connecter</a>
     <div class="d-flex justify-content-around">
     <a href="">Mode de passe oublié</a>
     <a href=""> Créer un compte</a>

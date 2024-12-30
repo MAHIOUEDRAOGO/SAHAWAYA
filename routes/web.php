@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\admin\adminController;
+use App\Http\Controllers\client\accueilClientController;
+use App\Http\Controllers\indexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin');
-});
+// Route::get('/', function () {
+//     return view('admin');
+// });
+
+Route::get('/',[indexController::class,'index'])->name('index');
+
+Route::get('admin',[adminController::class,'admin'])->name('admin');
+
+Route::get('accueilClient',[accueilClientController::class,'accueilClient'])->name('accueilClient');
