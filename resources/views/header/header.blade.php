@@ -111,7 +111,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
   <div class="container d-flex justify-content-center align-items-center">
     <div class="d-flex">
-    <a class="navbar-brand" href="#">SAHAWAYA</a>
+    <a class="navbar-brand" href="{{ route('accueilClient') }}">SAHAWAYA</a>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -144,6 +144,8 @@
 
 @yield('content')
 @yield('accueilClient')
+@yield('verifierDocument')
+@yield('envoyerDocument')
 
 <script src="assests/bootstrap/js/bootstrap.bundle.min.js"></script>
 

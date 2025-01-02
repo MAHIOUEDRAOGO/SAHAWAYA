@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main class="container">
+<main class="container p-5">
   <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
     
     <div class="lh-1">
